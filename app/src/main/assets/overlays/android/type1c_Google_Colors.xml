@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PRIMÄR FARBEN: -->
+    <!-- ROT -->
+    <color name="holo_red_light">#ffdb4437</color>
+
+    <!-- INDIGO -->
+    <color name="holo_blue_light">#ff4285f4</color>
+
+    <!-- GRÜN -->
+    <color name="holo_green_light">#ff0f9d58</color>
+
+    <!-- ORANGE -->
+    <color name="holo_orange_light">#fff4b400</color>
+
+    <!-- LILA -->
+    <color name="holo_purple">#9C27B0</color>
+
+    <!-- Grau -->
+    <color name="holo_gray_light">#757575</color>
+
+    <!-- AKZENT FARBEN: -->
+    <!-- ROT AKZENT: INDIGO -->
+    <color name="holo_red_dark">#ff4285f4</color>
+    <!-- INDIGO AKZENT: PINK -->
+    <color name="holo_blue_dark">#ffdb4437</color>
+    <!-- GRÜN AKZENT: BLAU -->
+    <color name="holo_green_dark">#ff4285f4</color>
+    <!-- Orange AKZENT: Indigo -->
+    <color name="holo_orange_dark">#ff4285f4</color>
+</resources>
+
