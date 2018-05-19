@@ -1,4 +1,4 @@
-package substratum.theme.template
+package com.schnettler.outlinecolors
 
 object AdvancedConstants {
 
