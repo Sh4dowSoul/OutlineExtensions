@@ -18,11 +18,9 @@ android {
 
     defaultConfig {
         applicationId "com.schnettler.outlinecolors"
-        minSdkVersion 26
         targetSdkVersion 28
 
-        versionCode 6
-        versionName "3"
+        versionName "4"
 
         buildConfigField "boolean", "SUPPORTS_THIRD_PARTY_SYSTEMS", "" + SUPPORTS_THIRD_PARTY_SYSTEMS
         buildConfigField "boolean", "ENABLE_APP_BLACKLIST_CHECK", "" + ENABLE_APP_BLACKLIST_CHECK
@@ -50,16 +48,19 @@ android {
         productFlavors {
             nougat {
                 minSdkVersion 25
+                versionCode 2500
                 dimension "android"
                 versionNameSuffix " - Nougat"
             }
             oreo {
                 minSdkVersion 26
+                versionCode 2600
                 dimension "android"
                 versionNameSuffix " - Oreo"
             }
             oreoMr {
                 minSdkVersion 27
+                versionCode 2700
                 dimension "android"
                 versionNameSuffix " - Oreo MR"
             }
