@@ -10,12 +10,6 @@ import android.os.Bundle
 import android.support.v7.app.AlertDialog
 import android.util.Log
 import android.widget.Toast
-import com.github.javiersantos.piracychecker.PiracyChecker
-import com.github.javiersantos.piracychecker.PiracyCheckerUtils
-import com.github.javiersantos.piracychecker.enums.InstallerID
-import com.github.javiersantos.piracychecker.enums.PiracyCheckerCallback
-import com.github.javiersantos.piracychecker.enums.PiracyCheckerError
-import com.github.javiersantos.piracychecker.enums.PirateApp
 import com.schnettler.outlinecolors.AdvancedConstants.ENFORCE_MINIMUM_SUBSTRATUM_VERSION
 import com.schnettler.outlinecolors.AdvancedConstants.MINIMUM_SUBSTRATUM_VERSION
 import com.schnettler.outlinecolors.AdvancedConstants.ORGANIZATION_THEME_SYSTEMS
@@ -51,52 +45,9 @@ class SubstratumLauncher : Activity() {
     private var getKeysIntent = "projekt.substratum.GET_KEYS"
     private var receiveKeysIntent = "projekt.substratum.RECEIVE_KEYS"
     private var tag = "SubstratumThemeReport"
-    private var piracyChecker: PiracyChecker? = null
 
     private fun calibrateSystem(certified: Boolean) {
-        if (!BuildConfig.DEBUG) { // Themers may want to change this for release builds!
-            startAntiPiracyCheck(certified)
-        } else {
-            quitSelf(certified)
-        }
-    }
-
-    private fun startAntiPiracyCheck(certified: Boolean) {
-        if (piracyChecker != null) {
-            piracyChecker!!.start()
-        } else {
-            if (BuildConfig.BASE_64_LICENSE_KEY.isEmpty() && !BuildConfig.DEBUG) {
-                Log.e(tag, PiracyCheckerUtils.getAPKSignature(this))
-            }
-
-            piracyChecker = PiracyChecker(this)
-            if (BuildConfig.ENFORCE_GOOGLE_PLAY_INSTALL)
-                piracyChecker!!.enableInstallerId(InstallerID.GOOGLE_PLAY)
-            if (BuildConfig.ENFORCE_AMAZON_APP_STORE_INSTALL)
-                piracyChecker!!.enableInstallerId(InstallerID.AMAZON_APP_STORE)
-
-            piracyChecker!!.callback(object : PiracyCheckerCallback() {
-                override fun allow() {
-                    quitSelf(certified)
-                }
-
-                override fun dontAllow(error: PiracyCheckerError, pirateApp: PirateApp?) {
-                    val parse = String.format(
-                            getString(R.string.toast_unlicensed),
-                            getString(R.string.ThemeName))
-                    Toast.makeText(this@SubstratumLauncher, parse, Toast.LENGTH_SHORT).show()
-                    finish()
-                }
-            })
-
-            if (BuildConfig.BASE_64_LICENSE_KEY.isNotEmpty()) {
-                piracyChecker!!.enableGooglePlayLicensing(BuildConfig.BASE_64_LICENSE_KEY)
-            }
-            if (BuildConfig.APK_SIGNATURE_PRODUCTION.isNotEmpty()) {
-                piracyChecker!!.enableSigningCertificate(BuildConfig.APK_SIGNATURE_PRODUCTION)
-            }
-            piracyChecker!!.start()
-        }
+        quitSelf(certified)
     }
 
     private fun quitSelf(certified: Boolean): Boolean {
