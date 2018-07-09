@@ -45,6 +45,22 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
+        flavorDimensions "android"
+        productFlavors {
+            nougat {
+                minSdkVersion 25
+                dimension "android"
+            }
+            oreo {
+                minSdkVersion 26
+                dimension "android"
+            }
+            oreoMr {
+                minSdkVersion 27
+                dimension "android"
+            }
+        }
     }
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
