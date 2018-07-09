@@ -51,14 +51,17 @@ android {
             nougat {
                 minSdkVersion 25
                 dimension "android"
+                versionNameSuffix " - Nougat"
             }
             oreo {
                 minSdkVersion 26
                 dimension "android"
+                versionNameSuffix " - Oreo"
             }
             oreoMr {
                 minSdkVersion 27
                 dimension "android"
+                versionNameSuffix " - Oreo MR"
             }
         }
     }
