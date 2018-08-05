@@ -20,6 +20,7 @@ android {
         applicationId "com.schnettler.outlinecolors"
         targetSdkVersion 28
 
+        versionCode 1
         versionName "4"
 
         buildConfigField "boolean", "SUPPORTS_THIRD_PARTY_SYSTEMS", "" + SUPPORTS_THIRD_PARTY_SYSTEMS
@@ -48,21 +49,27 @@ android {
         productFlavors {
             nougat {
                 minSdkVersion 25
-                versionCode 2500
+                versionCode 2500 + android.defaultConfig.versionCode
                 dimension "android"
                 versionNameSuffix " - Nougat"
             }
             oreo {
                 minSdkVersion 26
-                versionCode 2600
+                versionCode 2600 + android.defaultConfig.versionCode
                 dimension "android"
                 versionNameSuffix " - Oreo"
             }
             oreoMr {
                 minSdkVersion 27
-                versionCode 2700
+                versionCode 2700 + android.defaultConfig.versionCode
                 dimension "android"
                 versionNameSuffix " - Oreo MR"
+            }
+            pancake {
+                minSdkVersion 28
+                versionCode 2800 + android.defaultConfig.versionCode
+                dimension "android"
+                versionNameSuffix " - Pancake"
             }
         }
     }
