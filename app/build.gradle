@@ -21,7 +21,7 @@ android {
         targetSdkVersion 28
 
         versionCode 1
-        versionName "4"
+        versionName "5"
 
         buildConfigField "boolean", "SUPPORTS_THIRD_PARTY_SYSTEMS", "" + SUPPORTS_THIRD_PARTY_SYSTEMS
         buildConfigField "boolean", "ENABLE_APP_BLACKLIST_CHECK", "" + ENABLE_APP_BLACKLIST_CHECK
