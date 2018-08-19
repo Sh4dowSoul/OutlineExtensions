@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Accent -->
+    <color name="holo_red_light">#54b775</color>
+
+    <color name="holo_blue_light">@android:color/holo_red_light</color>
+    <color name="holo_green_light">@android:color/holo_red_light</color>
+    <color name="holo_orange_light">@android:color/holo_red_light</color>
+    <color name="holo_purple">@android:color/holo_red_light</color>
+    <color name="holo_gray_light">@android:color/holo_red_light</color>
+</resources>
