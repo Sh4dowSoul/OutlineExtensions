@@ -13,4 +13,15 @@
     <color name="homepage_storage_background">#00000000</color>
     <color name="homepage_support_background">#00000000</color>
     <color name="homepage_system_background">#00000000</color>
+
+    <!-- Custom ROM -->
+    <color name="homepage_nitrogen_background">#00000000</color>
+    <color name="homepage_cf_background">#00000000</color>
+    <color name="homepage_crdroid_background">#00000000</color>
+    <color name="homepage_extensions_background">#00000000</color>
+    <color name="homepage_owlsnest_background">#00000000</color>
+    <color name="homepage_liquid_background">#00000000</color>
+    <color name="homepage_havoc_background">#00000000</color>
+    <color name="homepage_syberia_background">#00000000</color>
+    <color name="homepage_mcaosp_background">#00000000</color>
 </resources>
