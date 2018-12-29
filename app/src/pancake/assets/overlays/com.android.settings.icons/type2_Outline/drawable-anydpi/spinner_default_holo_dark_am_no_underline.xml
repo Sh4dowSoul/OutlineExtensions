@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <stroke android:color="?android:colorControlNormal" android:width="1.5dp"/>
+            <size
+                android:height="@*com.android.settings:dimen/dashboard_tile_image_size"
+                android:width="@*com.android.settings:dimen/dashboard_tile_image_size" />
+        </shape>
+    </item>
+</layer-list>
