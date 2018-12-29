@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="homepage_accessibility_background">#00000000</color>
+    <color name="homepage_accounts_background">#00000000</color>
+    <color name="homepage_app_and_notification_background">#00000000</color>
+    <color name="homepage_battery_background">#00000000</color>
+    <color name="homepage_connected_device_background">#00000000</color>
+    <color name="homepage_display_background">#00000000</color>
+    <color name="homepage_generic_icon_background">#00000000</color>
+    <color name="homepage_network_background">#00000000</color>
+    <color name="homepage_security_background">#00000000</color>
+    <color name="homepage_sound_background">#00000000</color>
+    <color name="homepage_storage_background">#00000000</color>
+    <color name="homepage_support_background">#00000000</color>
+    <color name="homepage_system_background">#00000000</color>
+
+    <!-- Custom ROM -->
+    <color name="homepage_nitrogen_background">#00000000</color>
+    <color name="homepage_cf_background">#00000000</color>
+    <color name="homepage_crdroid_background">#00000000</color>
+    <color name="homepage_extensions_background">#00000000</color>
+    <color name="homepage_owlsnest_background">#00000000</color>
+    <color name="homepage_liquid_background">#00000000</color>
+    <color name="homepage_havoc_background">#00000000</color>
+    <color name="homepage_syberia_background">#00000000</color>
+    <color name="homepage_mcaosp_background">#00000000</color>
+</resources>
