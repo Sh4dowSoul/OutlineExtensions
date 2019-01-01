@@ -26,4 +26,11 @@
     <color name="homepage_havoc_background">@android:color/holo_blue_light</color>
     <color name="homepage_syberia_background">@android:color/holo_blue_light</color>
     <color name="homepage_mcaosp_background">@android:color/holo_blue_light</color>
+    <color name="homepage_sparks_background">@android:color/holo_blue_light</color>
+    <color name="homepage_customsquash_background">@android:color/holo_blue_light</color>
+    <color name="homepage_xtensions_background">@android:color/holo_blue_light</color>
+    <color name="homepage_pixys_background">@android:color/holo_blue_light</color>
+    <color name="homepage_skydragon_background">@android:color/holo_blue_light</color>
+    <color name="homepage_bootlegdump_background">@android:color/holo_blue_light</color>
+    <color name="omni_logo_color">@android:color/holo_blue_light</color>
 </resources>
