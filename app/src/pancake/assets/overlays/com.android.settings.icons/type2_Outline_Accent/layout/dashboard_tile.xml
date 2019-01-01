@@ -16,8 +16,7 @@
         android:scaleType="centerInside"
         android:layout_marginStart="@*com.android.settings:dimen/dashboard_tile_image_margin"
         android:layout_marginEnd="@*com.android.settings:dimen/dashboard_tile_image_margin"
-        android:background="@*com.android.settings:drawable/spinner_default_holo_dark_am_no_underline"
-        android:tint="#FFF"/>
+        android:background="@*com.android.settings:drawable/spinner_default_holo_dark_am_no_underline" />
 
     <LinearLayout
         android:orientation="vertical"
