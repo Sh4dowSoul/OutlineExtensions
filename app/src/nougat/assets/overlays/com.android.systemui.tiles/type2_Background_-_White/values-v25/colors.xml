@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background -->
+    <color name="system_primary_color">#FFF</color>                                                 <!-- CM based ROMs -->
+    <color name="qs_edit_item_decoration_bg">#FFF</color>                                           <!-- Edit Hintergrund -->
+    <color name="qs_detail_transition">#66757575</color>
+
+    <!-- Tiles -->
+    <color name="qs_tile_tint_unavailable">#80000000</color>
+    <color name="qs_tile_tint_inactive">#80000000</color>
+    <color name="qs_tile_tint_active">#de000000</color>
+
+    <!-- Text -->
+    <color name="qs_text">#de000000</color>                  <!-- Text Color -->
+    <color name="qs_tile_text">#de000000</color>
+    <color name="qs_subhead">#80000000</color>
+    <color name="qs_detail_empty">#de000000</color>
+    <color name="qs_detail_button">#de000000</color>
+    <color name="qs_detail_button_white">#de000000</color>
+    <color name="segmented_button_selected">@*android:color/accent_material_light</color>
+
+    <!-- Battery -->
+    <color name="qs_battery_text_color">#de000000</color>
+    <color name="qs_battery_graph_text_color">#de000000</color>
+
+    <color name="batterymeter_frame_color_tile">#de000000</color>
+    <color name="batterymeter_circle_tile_bolt_plus_color">#de000000</color>
+    <color name="batterymeter_tile_bolt_plus_color">#de000000</color>
+    <color name="battery_normal_charge_level_tile">#de000000</color>
+
+    <!-- Other -->
+    <color name="volume_icon_color">#de000000</color>
+    <color name="volume_slider_inactive">#80000000</color>
+    <color name="data_usage_secondary">#de000000</color>
+    <color name="data_usage_graph_track">#80000000</color>
+    <color name="segmented_button_unselected">#de000000</color>
+    <color name="qs_user_detail_icon_muted">#80000000</color>
+    <color name="omni_jaws_detailed_temperature_color">#de000000</color>
+
+    <!-- Exposed -->
+    <color name="external_qs_tile_tint_color">#de000000</color>
+    <color name="qs_alarm_status_text_color">#de000000</color>
+</resources>
