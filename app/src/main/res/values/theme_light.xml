@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background Color -->
+    <string-array name="light_backgrounds">
+        <item>background</item>
+        <item>bubble_chatBackground</item>
+        <item>chatKeyboard</item>
+    </string-array>
+
+    <!-- Darker Background -->
+    <string-array name="light_backgrounds_darker">
+        <item>bubble_button_noWallpaper</item>
+        <item>bubble_date_noWallpaper</item>
+        <item>bubble_unread_noWallpaper</item>
+    </string-array>
+
+    <!-- Accent Color Light -->
+    <string-array name="light_accent">
+        <item>bubbleIn_progress</item>
+        <item>bubbleOut_chatVerticalLine</item>
+        <item>chatListAction</item>
+        <item>chatListVerify</item>
+        <item>chatSendButton</item>
+        <item>checkActive</item>
+        <item>circleButtonTheme</item>
+        <item>controlActive</item>
+        <item>file</item>
+        <item>headerBarCallActive</item>
+        <item>iconActive</item>
+        <item>inlineOutline</item>
+        <item>inlineText</item>
+        <item>inputActive</item>
+        <item>messageAuthor</item>
+        <item>messageSwipeBackground</item>
+        <item>messageVerticalLine</item>
+        <item>online</item>
+        <item>passcode</item>
+        <item>playerButtonActive</item>
+        <item>profileSectionActive</item>
+        <item>profileSectionActiveContent</item>
+        <item>progress</item>
+        <item>promo</item>
+        <item>seekDone</item>
+        <item>sliderActive</item>
+        <item>ticks</item>
+        <item>togglerPositive</item>
+        <item>unreadText</item>
+    </string-array>
+
+    <!-- Text Color Header -->
+    <string-array name="light_headerPrimary">
+        <item>headerIcon</item>
+        <item>headerTabActive</item>
+        <item>headerTabActiveText</item>
+        <item>headerText</item>
+    </string-array>
+
+    <!-- Text Color Secondary Header -->
+    <string-array name="light_headerSecondary">
+        <item>headerTabInactiveText</item>
+    </string-array>
+
+    <!-- Text Color Bubble -->
+    <string-array name="light_textColor">
+        <item>bubble_buttonText_noWallpaper</item>
+        <item>bubble_dateText_noWallpaper</item>
+        <item>bubble_unreadText_noWallpaper</item>
+    </string-array>
+</resources>

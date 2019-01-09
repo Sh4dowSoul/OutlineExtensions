@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Color -->
+    <string-array name="primary">
+        <item>headerBackground</item>
+        <item>headerLightBackground</item>
+    </string-array>
+
+    <!-- Accent Color -->
+    <string-array name="accent">
+        <item>avatarSavedMessages</item>
+        <item>bubbleIn_textLink</item>
+        <item>bubbleOut_textLink</item>
+        <item>circleButtonRegular</item>
+        <item>fillingPositive</item>
+        <item>textLink</item>
+        <item>textSearchQueryHighlight</item>
+        <item>bubbleOut_file</item>
+        <item>notification</item>
+        <item>notificationPlayer</item>
+        <item>badge</item>
+        <item>waveformActive</item>
+        <item>headerButton</item>
+        <item>bubbleOut_waveformActive</item>
+        <item>togglerActive</item>
+        <item>textNeutral</item>
+    </string-array>
+
+    <!-- Accent Color Transparent -->
+    <string-array name="accent_transparent">
+        <item>bubbleOut_background</item>
+        <item>textLinkPressHighlight</item>
+        <item>togglerNegativeBackground</item>
+        <item>textSelectionHighlight</item>
+        <item>togglerActiveBackground</item>
+    </string-array>
+
+    <!-- Red Color -->
+    <string-array name="red">
+        <item>avatarPink</item>
+        <item>avatarRed</item>
+        <item>badgeFailed</item>
+        <item>circleButtonNegative</item>
+        <item>circleButtonNewChat</item>
+        <item>fileRed</item>
+        <item>fillingNegative</item>
+        <item>iconNegative</item>
+        <item>namePink</item>
+        <item>nameRed</item>
+        <item>textNegative</item>
+        <item>togglerNegative</item>
+        <item>attachContact</item>
+    </string-array>
+
+    <!-- Blue Color -->
+    <string-array name="blue">
+        <item>avatarBlue</item>
+        <item>avatarCyan</item>
+        <item>circleButtonNewChannel</item>
+        <item>nameBlue</item>
+        <item>nameCyan</item>
+        <item>attachInlineBot</item>
+        <item>attachPhoto</item>
+    </string-array>
+
+    <!-- Green Color -->
+    <string-array name="green">
+        <item>avatarGreen</item>
+        <item>circleButtonNewSecret</item>
+        <item>circleButtonPositive</item>
+        <item>fileGreen</item>
+        <item>iconPositive</item>
+        <item>nameGreen</item>
+        <item>notificationSecure</item>
+        <item>textSecure</item>
+        <item>attachLocation</item>
+    </string-array>
+
+    <!-- Orange Color -->
+    <string-array name="orange">
+        <item>avatarOrange</item>
+        <item>avatarYellow</item>
+        <item>circleButtonNewGroup</item>
+        <item>fileYellow</item>
+        <item>nameOrange</item>
+        <item>nameYellow</item>
+        <item>attachFile</item>
+    </string-array>
+
+    <!-- Purple Color -->
+    <string-array name="purple">
+        <item>avatarViolet</item>
+        <item>nameViolet</item>
+    </string-array>
+
+    <!-- Bubble Out Text -->
+    <string-array name="textColor_bubbleOut">
+        <item>bubbleOut_messageAuthor</item>
+        <item>bubbleOut_progress</item>
+        <item>bubbleOut_text</item>
+        <item>bubbleOut_ticks</item>
+        <item>bubbleOut_ticksRead</item>
+        <item>bubbleOut_time</item>
+        <item>bubbleOut_waveformInactive</item>
+        <item>headerButtonIcon</item>
+    </string-array>
+</resources>

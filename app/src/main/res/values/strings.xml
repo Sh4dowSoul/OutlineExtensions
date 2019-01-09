@@ -1,0 +1,14 @@
+<resources>
+    <string name="dynamic_theme_key">dynamic_theme</string>
+    <string name="dark_theme_key">dark_theme</string>
+    <string name="accent_key">accent</string>
+    <string name="toolbar_key">toolbar</string>
+    <string name="background_key">background_main</string>
+    <string name="palette_key">color_palette</string>
+
+    <string name="dark_title">Dark Theme</string>
+    <string name="dark_summary">Create a dark Theme</string>
+
+    <string name="dynamic_title">Dynamic Theme</string>
+    <string name="dynamic_summary">Create a dynamic Theme based on your System</string>
+</resources>

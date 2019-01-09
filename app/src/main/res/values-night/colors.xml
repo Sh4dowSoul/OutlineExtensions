@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#202030</color>
+    <color name="colorNavigationBar">@color/colorBackground</color>
+
+    <!-- Preview -->
+    <color name="bubbleIn">#1a000000</color>
+    <color name="bubbleOutAlpha">#33FFFFFF</color>
+</resources>

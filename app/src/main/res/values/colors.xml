@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFF</color>
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <color name="colorBackground">@color/colorPrimary</color>
+    <color name="colorAccent">#d37a7a</color>
+    <color name="colorNavigationBar">#FF000000</color>
+
+    <!-- Preview -->
+    <color name="bubbleIn">#FFF</color>
+    <color name="bubbleOutAlpha">#99FFFFFF</color>
+    <color name="handleColor">#e5e5e5</color>
+
+
+
+    <!-- Framework -->
+    <color name="colorAccentDynamic">@*android:color/accent_material_light</color>
+    <color name="colorBackgroundDynamic">@*android:color/background_material_dark</color>
+</resources>

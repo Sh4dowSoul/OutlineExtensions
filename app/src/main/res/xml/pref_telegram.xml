@@ -1,0 +1,57 @@
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="App Theme">
+        <SwitchPreferenceCompat
+            android:title="@string/dark_title"
+            android:summary="@string/dark_summary"
+            android:key="@string/dark_theme_key"
+            android:defaultValue="false"
+            android:icon="@drawable/ic_settings_night"/>
+
+        <SwitchPreferenceCompat
+            android:title="@string/dynamic_title"
+            android:summary="@string/dynamic_summary"
+            android:key="@string/dynamic_theme_key"
+            android:defaultValue="false"
+            android:icon="@drawable/ic_settings_dynamic"
+            android:disableDependentsState="true"/>
+        <SwitchPreferenceCompat
+            android:title="Toolbar"
+            android:key="@string/toolbar_key"
+            android:summary="Use Accent as Toolbar (Primary) Color"
+            android:icon="@drawable/ic_settings_primary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="App Colors"  android:key="app_colors_key">
+        <ListPreference
+            android:title="Color Palette"
+            android:summary="%s"
+            android:key="@string/palette_key"
+            android:defaultValue="#7E8ACD"
+            android:icon="@drawable/circle_shape"
+            android:entries="@array/color_palette_names_array"
+            android:entryValues="@array/color_palette_values_array"/>
+        <ListPreference
+            android:title="Accent Color"
+            android:summary="%s"
+            android:defaultValue="#d37a7a"
+            android:key="@string/accent_key"
+            android:icon="@drawable/circle_shape"
+            android:entries="@array/accent_color_names_array" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="Background">
+        <ListPreference
+            android:title="Main Background"
+            android:key="@string/background_key"
+            android:dependency="@string/dark_theme_key"
+            android:summary="%s"
+            android:defaultValue="#202030"
+            android:icon="@drawable/circle_shape"
+            android:entries="@array/background_color_names_array"
+            android:entryValues="@array/background_color_values_array"/>
+    </PreferenceCategory>
+
+</android.support.v7.preference.PreferenceScreen>

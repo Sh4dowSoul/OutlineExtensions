@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color Palette -->
+    <string-array name="color_palette_names_array">
+        <item>Pastel</item>
+        <item>Light Pastel</item>
+        <item>Material</item>
+        <item>Outline</item>
+    </string-array>
+    <string-array name="color_palette_values_array">
+        <item>#7E8ACD</item>
+        <item>#A4B0D9</item>
+        <item>#3F51b5</item>
+        <item>#5C6BC0</item>
+    </string-array>
+
+
+    <!-- Palette Definitions -->
+    <string-array name="colorsPastel">
+        <item>#d37a7a</item>
+        <item>#7db694</item>
+        <item>#7E8ACD</item>
+        <item>#f2a56f</item>
+        <item>#8e8eb2</item>
+    </string-array>
+    <string-array name="colorsPastelLight">
+        <item>#EC979A</item>
+        <item>#96C4A8</item>
+        <item>#A4B0D9</item>
+        <item>#F4B68B</item>
+        <item>#B99BCA</item>
+    </string-array>
+    <string-array name="colorsMaterial">
+        <item>#d32f2f</item>
+        <item>#54b775</item>
+        <item>#3F51b5</item>
+        <item>#ff9800</item>
+        <item>#9C27B0</item>
+    </string-array>
+    <string-array name="colorsOutline">
+        <item>#EF5350</item>
+        <item>#66BB6A</item>
+        <item>#5C6BC0</item>
+        <item>#FFA000</item>
+        <item>#AB47BC</item>
+    </string-array>
+
+
+    <!-- Background Colors -->
+    <string-array name="background_color_names_array">
+        <item>Ethereal</item>
+        <item>Black</item>
+        <item>Cobalt</item>
+        <item>Sapphire</item>
+    </string-array>
+
+    <string-array name="background_color_values_array">
+        <item>#202030</item>
+        <item>#000000</item>
+        <item>#2e3441</item>
+        <item>#1e2748</item>
+    </string-array>
+
+
+    <!-- Accent Colors -->
+    <string-array name="accent_color_names_array">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Orange</item>
+        <item>Purple</item>
+    </string-array>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background Color -->
+    <string-array name="dark_backgrounds">
+        <item>background</item>                                                                     <!-- Main -->
+        <item>bubble_chatBackground</item>
+        <item>chatBackground</item>
+        <item>chatKeyboard</item>
+        <item>filling</item>
+        <item>messageSwipeBackground</item>
+        <item>overlayFilling</item>
+        <item>passcode</item>
+        <item>unread</item>
+    </string-array>
+
+    <!-- Background Color Darker -->
+    <string-array name="dark_backgrounds_darker">
+        <item>bubble_date_noWallpaper</item>                                                        <!-- Date Bubble-->
+        <item>bubble_unread_noWallpaper</item>                                                      <!-- Unread Bubble -->
+        <item>bubbleIn_background</item>                                                            <!-- Bubble -In -->
+        <item>circleButtonChat</item>
+        <item>circleButtonOverlay</item>
+        <item>circleButtonTheme</item>
+        <item>file</item>
+        <item>separator</item>                                                                      <!-- Divider -->
+    </string-array>
+
+    <!-- ColorControlNormal -->
+    <string-array name="dark_colorControlNormal">
+        <item>background_icon</item>
+        <item>background_text</item>
+        <item>background_textLight</item>
+        <item>waveformInactive</item>
+        <item>chatListMute</item>
+        <item>controlInactive</item>
+        <item>textLight</item>
+        <item>badgeMuted</item>
+    </string-array>
+
+    <!-- Text Color Primary -->
+    <string-array name="dark_textColor">
+        <item>icon</item>
+        <item>messageAuthor</item>
+    </string-array>
+</resources>

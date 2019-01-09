@@ -16,12 +16,12 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/ThemeName"
         android:supportsRtl="true"
-        android:theme="@style/DialogStyle"
+        android:theme="@style/AppTheme"
         tools:node="replace"
         tools:ignore="GoogleAppIndexingWarning"
         android:extractNativeLibs="false">
 
-        <activity android:name="com.schnettler.outlinecolors.SubstratumLauncher">
+        <activity android:name="com.schnettler.outlinecolors.SubstratumLauncher" android:theme="@style/DialogStyle">
             <intent-filter>
                 <action android:name="projekt.substratum.THEME"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -32,6 +32,15 @@
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.schnettler.outlinecolors.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
