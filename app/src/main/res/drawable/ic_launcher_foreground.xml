@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="108dp"
+    android:viewportHeight="108"
+    android:viewportWidth="108"
+    android:width="108dp">
+
+    <path
+        android:name="Cutout"
+        android:fillColor="#FFF"
+        android:strokeWidth="4"
+        android:pathData="M108 0v108H0V0h108zM54 24c-16.56 0-30 13.44-30 30 0 16.56 13.44 30 30 30 16.56 0 30-13.44 30-30 0-16.56-13.44-30-30-30z"/>
+
+    <path
+        android:name="Icon"
+        android:strokeColor="#FFF"
+        android:strokeWidth="4"
+        android:pathData="M42.418 46.824l10.943-6.111c.426-.284.852-.284 1.278 0l10.943 6.111c.426.284.71.71.71 1.137v12.078c0 .569-.284.995-.71 1.137l-10.943 6.111c-.426.284-.852.284-1.278 0l-10.943-5.969c-.426-.284-.71-.71-.71-1.136V48.103c0-.569.284-.995.71-1.279zm-.515.535l11.458 6.428c.426.284.852.284 1.278 0l11.467-6.433M54 54.071V67.5"/>
+</vector>
