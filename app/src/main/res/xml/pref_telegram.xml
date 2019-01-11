@@ -29,7 +29,7 @@
             android:summary="%s"
             android:key="@string/palette_key"
             android:defaultValue="#7E8ACD"
-            android:icon="@drawable/circle_shape"
+            android:icon="@drawable/circle_shape_layer"
             android:entries="@array/color_palette_names_array"
             android:entryValues="@array/color_palette_values_array"/>
         <ListPreference
@@ -37,7 +37,7 @@
             android:summary="%s"
             android:defaultValue="#d37a7a"
             android:key="@string/accent_key"
-            android:icon="@drawable/circle_shape"
+            android:icon="@drawable/circle_shape_layer"
             android:entries="@array/accent_color_names_array" />
     </PreferenceCategory>
 
@@ -49,7 +49,7 @@
             android:dependency="@string/dark_theme_key"
             android:summary="%s"
             android:defaultValue="#202030"
-            android:icon="@drawable/circle_shape"
+            android:icon="@drawable/circle_shape_layer"
             android:entries="@array/background_color_names_array"
             android:entryValues="@array/background_color_values_array"/>
     </PreferenceCategory>
