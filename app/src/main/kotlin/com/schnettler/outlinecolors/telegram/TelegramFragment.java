@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.StrictMode;
 import android.support.constraint.ConstraintLayout;
+import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
@@ -63,6 +64,7 @@ public class TelegramFragment extends PreferenceFragmentCompat implements Shared
     TextView previewPurple;
 
     Theme currentTheme;
+    BottomSheetBehavior bottomSheetBehavior;
 
     @Override
     public void onCreatePreferences(Bundle bundle, String s) {
@@ -138,6 +140,7 @@ public class TelegramFragment extends PreferenceFragmentCompat implements Shared
         previewGreen = view.findViewById(R.id.previewGreen);
         previewOrange = view.findViewById(R.id.previewOrange);
         previewPurple = view.findViewById(R.id.previewPurple);
+        bottomSheetBehavior = BottomSheetBehavior.from(bottomsheet);
         generatePreview();
 
         return view;
@@ -287,5 +290,13 @@ public class TelegramFragment extends PreferenceFragmentCompat implements Shared
         previewGreen.getBackground().setTint(Color.parseColor(currentTheme.getGreen()));
         previewOrange.getBackground().setTint(Color.parseColor(currentTheme.getOrange()));
         previewPurple.getBackground().setTint(Color.parseColor(currentTheme.getPurple()));
+    }
+
+    public boolean handleBottomSheet() {
+        boolean expanded = bottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED ? true : false;
+        if (expanded) {
+            bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+        }
+        return expanded;
     }
 }

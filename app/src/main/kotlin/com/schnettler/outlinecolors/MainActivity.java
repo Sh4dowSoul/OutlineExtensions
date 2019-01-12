@@ -1,6 +1,7 @@
 package com.schnettler.outlinecolors;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
@@ -29,5 +30,15 @@ public class MainActivity extends AppCompatActivity {
     public void setTheme(int resId) {
         super.setTheme(resId);
         AppCompatDelegate.setDefaultNightMode(PreferenceManager.getDefaultSharedPreferences(this).getBoolean("dark_theme", false) ? MODE_NIGHT_YES : MODE_NIGHT_NO);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.container);
+        if (fragment instanceof TelegramFragment) {
+            if (!((TelegramFragment) fragment).handleBottomSheet()) {   //If was not expanded
+                super.onBackPressed();
+            }
+        }
     }
 }
