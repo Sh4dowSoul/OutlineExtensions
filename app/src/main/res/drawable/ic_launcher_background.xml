@@ -4,6 +4,6 @@
     android:viewportHeight="108.0"
     android:viewportWidth="108.0">
     <path
-        android:fillColor="@*android:color/accent_material_light"
+        android:fillColor="@color/icon_accent"
         android:pathData="M108,108H0V0h108V108z"/>
 </vector>
