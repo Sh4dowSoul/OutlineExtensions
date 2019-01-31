@@ -30,5 +30,7 @@
     <color name="homepage_pixys_background">#00000000</color>
     <color name="homepage_skydragon_background">#00000000</color>
     <color name="homepage_bootlegdump_background">#00000000</color>
+    <color name="homepage_rr_background">#00000000</color>
+    <color name="homepage_du_background">#00000000</color>
     <color name="omni_logo_color">#00000000</color>
 </resources>
