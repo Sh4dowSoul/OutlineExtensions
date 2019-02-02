@@ -61,6 +61,7 @@
         <item>Black</item>
         <item>Cobalt</item>
         <item>Sapphire</item>
+        <item>Woodsmoke</item>
     </string-array>
 
     <string-array name="background_color_values_array">
@@ -68,6 +69,7 @@
         <item>#000000</item>
         <item>#2e3441</item>
         <item>#1e2748</item>
+        <item>#16171D</item>
     </string-array>
 
 
