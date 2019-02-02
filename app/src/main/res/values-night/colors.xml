@@ -4,6 +4,6 @@
     <color name="colorNavigationBar">@color/colorBackground</color>
 
     <!-- Preview -->
-    <color name="bubbleIn">#1a000000</color>
+    <color name="bubbleIn">#0dFFFFFF</color>
     <color name="bubbleOutAlpha">#33FFFFFF</color>
 </resources>

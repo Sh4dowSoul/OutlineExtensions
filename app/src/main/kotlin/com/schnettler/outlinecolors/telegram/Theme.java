@@ -169,7 +169,7 @@ public class Theme {
         result.append(getBackgroundMain());
         //Background Darker
         result.append(Util.arrayToString(context.getResources().getStringArray(isDark ? R.array.dark_backgrounds_darker : R.array.light_backgrounds_darker)));
-        result.append(isDark ? Util.blendColor("#000000", getBackgroundMain(), 0.1f) : "#F2F3F4");
+        result.append(isDark ? Util.blendColor("#FFFFFF", getBackgroundMain(), 0.05f) : "#F2F3F4");
 
         //Primary
         result.append(Util.arrayToString(context.getResources().getStringArray(R.array.primary)));
