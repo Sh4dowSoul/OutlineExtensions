@@ -271,6 +271,9 @@ public class TelegramFragment extends PreferenceFragmentCompat implements Shared
             case "#5C6BC0"://Outline
                 listPreferenceAccent.setEntryValues(getContext().getResources().getStringArray(R.array.colorsOutline));
                 break;
+            case "#64A4D8"://BubbleGum
+                listPreferenceAccent.setEntryValues(getContext().getResources().getStringArray(R.array.colorsBubblegum));
+                break;
         }
         if (selected != -1) {
             listPreferenceAccent.setValueIndex(selected);

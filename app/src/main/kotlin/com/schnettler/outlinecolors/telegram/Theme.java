@@ -94,6 +94,9 @@ public class Theme {
                 //Outline
                 colorPalette = context.getResources().getStringArray(R.array.colorsOutline);
                 break;
+            case "#64A4D8"://BubbleGum
+                colorPalette = context.getResources().getStringArray(R.array.colorsBubblegum);
+                break;
         }
     }
 
