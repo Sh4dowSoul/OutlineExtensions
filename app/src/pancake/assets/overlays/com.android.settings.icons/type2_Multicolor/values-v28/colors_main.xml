@@ -35,5 +35,6 @@
     <color name="homepage_bootlegdump_background">@android:color/holo_blue_light</color>
     <color name="homepage_rr_background">@android:color/holo_blue_light</color>
     <color name="homepage_du_background">@android:color/holo_red_light</color>
+    <color name="homepage_pewdiepie_background">@android:color/holo_blue_light</color>
     <color name="omni_logo_color">@android:color/holo_blue_light</color>
 </resources>
