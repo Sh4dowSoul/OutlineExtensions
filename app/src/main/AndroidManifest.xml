@@ -28,6 +28,10 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
             <intent-filter>
+                <action android:name="projekt.substratum.lite.THEME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
                 <action android:name="projekt.substratum.GET_KEYS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
