@@ -11,16 +11,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.StrictMode;
-import android.support.constraint.ConstraintLayout;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.preference.ListPreference;
-import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.PreferenceFragmentCompat;
-import android.support.v7.preference.PreferenceManager;
-import android.support.v7.preference.SwitchPreferenceCompat;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
@@ -30,6 +20,9 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 import com.schnettler.outlinecolors.R;
 
 import java.io.File;
@@ -37,6 +30,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.List;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.preference.ListPreference;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.PreferenceManager;
+import androidx.preference.SwitchPreferenceCompat;
 
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
@@ -49,6 +50,7 @@ public class TelegramFragment extends PreferenceFragmentCompat implements Shared
     SharedPreferences sp;
     PreferenceCategory appColorsCategory;
     ListPreference backgroundPreference;
+    FloatingActionButton floatingActionButton;
 
     String fileName = "";
     private static final int STORAGE_REQUEST = 1;
@@ -93,7 +95,7 @@ public class TelegramFragment extends PreferenceFragmentCompat implements Shared
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = super.onCreateView(inflater,container,savedInstanceState);
 
-        FloatingActionButton floatingActionButton = view.findViewById(R.id.fab);
+        floatingActionButton = view.findViewById(R.id.fab);
         floatingActionButton.setOnClickListener(view1 -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
             builder.setTitle("Save as");
@@ -201,8 +203,7 @@ public class TelegramFragment extends PreferenceFragmentCompat implements Shared
                     Snackbar.make(getActivity().findViewById(android.R.id.content), "Theme saved",
                             Snackbar.LENGTH_LONG).setAction("Open Telegram X", view -> {
                         initShareIntent("challegram", file.getAbsolutePath());
-                    })
-                            .show();
+                    }).setAnchorView(floatingActionButton).show();
                 } catch (IOException e) {
                     Log.e("Exception", "File write failed: " + e.toString());
                 }
@@ -296,7 +297,7 @@ public class TelegramFragment extends PreferenceFragmentCompat implements Shared
     }
 
     public boolean handleBottomSheet() {
-        boolean expanded = bottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED ? true : false;
+        boolean expanded = bottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED;
         if (expanded) {
             bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
         }

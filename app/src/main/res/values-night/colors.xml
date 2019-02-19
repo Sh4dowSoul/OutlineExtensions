@@ -2,6 +2,7 @@
 <resources>
     <color name="colorPrimary">#202030</color>
     <color name="colorNavigationBar">@color/colorBackground</color>
+    <color name="colorSurface">#2b2b3b</color>
 
     <!-- Preview -->
     <color name="bubbleIn">#0dFFFFFF</color>

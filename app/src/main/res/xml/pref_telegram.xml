@@ -1,4 +1,4 @@
-<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory android:title="App Theme">
         <SwitchPreferenceCompat
@@ -54,4 +54,4 @@
             android:entryValues="@array/background_color_values_array"/>
     </PreferenceCategory>
 
-</android.support.v7.preference.PreferenceScreen>
+</androidx.preference.PreferenceScreen>

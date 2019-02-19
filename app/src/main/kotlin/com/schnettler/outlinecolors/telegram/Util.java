@@ -3,7 +3,7 @@ package com.schnettler.outlinecolors.telegram;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Environment;
-import android.support.v4.graphics.ColorUtils;
+import androidx.core.graphics.ColorUtils;
 
 public class Util {
 

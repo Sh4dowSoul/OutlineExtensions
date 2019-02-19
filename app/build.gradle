@@ -1,9 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply from: 'ThemerConstants.gradle'
 
 ext {
-    // Encryption values, do not touch as we generate a random key every time you compile!
+    // Themers: DO NOT MODIFY
     byte[] key = new byte[16]
     new Random().nextBytes(key)
     KEY = key
@@ -22,13 +21,6 @@ android {
         versionCode 18
         versionName "10.1"
 
-        buildConfigField "boolean", "SUPPORTS_THIRD_PARTY_SYSTEMS", "" + SUPPORTS_THIRD_PARTY_SYSTEMS
-        buildConfigField "boolean", "ENABLE_APP_BLACKLIST_CHECK", "" + ENABLE_APP_BLACKLIST_CHECK
-        buildConfigField "boolean", "ENFORCE_INTERNET_CHECK", "" + ENFORCE_INTERNET_CHECK
-        buildConfigField "boolean", "ENFORCE_GOOGLE_PLAY_INSTALL", "" + ENFORCE_GOOGLE_PLAY_INSTALL
-        buildConfigField "boolean", "ENFORCE_AMAZON_APP_STORE_INSTALL", "" + ENFORCE_AMAZON_APP_STORE_INSTALL
-        buildConfigField "boolean", "ALLOW_THIRD_PARTY_SUBSTRATUM_BUILDS", "" + ALLOW_THIRD_PARTY_SUBSTRATUM_BUILDS
-
         buildConfigField "String", "IV_KEY", "\"" + IV_KEY + "\""
         buildConfigField "byte[]", "DECRYPTION_KEY", String.valueOf("\"" + KEY + "\"").replace("\"", "").replace("[", "{").replace("]", "}")
         buildConfigField "byte[]", "IV_KEY", String.valueOf("\"" + IV_KEY + "\"").replace("\"", "").replace("[", "{").replace("]", "}")
@@ -39,36 +31,35 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         release {
-            // When you compile an APK as release, your resources and IV keys will be safeguarded
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
 
-        flavorDimensions "android"
-        productFlavors {
-            nougat {
-                minSdkVersion 25
-                versionCode 2500 + android.defaultConfig.versionCode
-                dimension "android"
-                versionNameSuffix " - Nougat"
-            }
-            oreo {
-                minSdkVersion 26
-                versionCode 2600 + android.defaultConfig.versionCode
-                dimension "android"
-                versionNameSuffix " - Oreo"
-            }
-            oreoMr {
-                minSdkVersion 27
-                versionCode 2700 + android.defaultConfig.versionCode
-                dimension "android"
-                versionNameSuffix " - Oreo MR"
-            }
-            pancake {
-                minSdkVersion 28
-                versionCode 2800 + android.defaultConfig.versionCode
-                dimension "android"
-                versionNameSuffix " - Pie"
+            flavorDimensions "android"
+            productFlavors {
+                nougat {
+                    minSdkVersion 25
+                    versionCode 2500 + android.defaultConfig.versionCode
+                    dimension "android"
+                    versionNameSuffix " - Nougat"
+                }
+                oreo {
+                    minSdkVersion 26
+                    versionCode 2600 + android.defaultConfig.versionCode
+                    dimension "android"
+                    versionNameSuffix " - Oreo"
+                }
+                oreoMr {
+                    minSdkVersion 27
+                    versionCode 2700 + android.defaultConfig.versionCode
+                    dimension "android"
+                    versionNameSuffix " - Oreo MR"
+                }
+                pancake {
+                    minSdkVersion 28
+                    versionCode 2800 + android.defaultConfig.versionCode
+                    dimension "android"
+                    versionNameSuffix " - Pie"
+                }
             }
         }
     }
@@ -83,16 +74,10 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    implementation 'com.android.support:preference-v7:28.0.0'
-    implementation 'com.android.support:design:28.0.0'
-    implementation 'pub.devrel:easypermissions:2.0.0'
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version") {
-        transitive = true
-    }
-}
-
-repositories {
-    mavenCentral()
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version")
+    implementation("androidx.appcompat:appcompat:1.0.2")
+    implementation("androidx.preference:preference:1.0.0")
+    implementation("androidx.constraintlayout:constraintlayout:1.1.3")
+    implementation("com.google.android.material:material:1.1.0-alpha02")
+    implementation("pub.devrel:easypermissions:2.0.0")
 }

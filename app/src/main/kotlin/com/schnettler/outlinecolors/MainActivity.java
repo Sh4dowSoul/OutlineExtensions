@@ -1,16 +1,17 @@
 package com.schnettler.outlinecolors;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.app.AppCompatDelegate;
-import android.support.v7.preference.PreferenceManager;
+import android.preference.PreferenceManager;
 
 import com.schnettler.outlinecolors.telegram.TelegramFragment;
 
-import static android.support.v7.app.AppCompatDelegate.MODE_NIGHT_NO;
-import static android.support.v7.app.AppCompatDelegate.MODE_NIGHT_YES;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
+import static androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO;
+import static androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES;
 
 public class MainActivity extends AppCompatActivity {
 

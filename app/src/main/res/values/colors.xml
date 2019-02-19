@@ -5,6 +5,7 @@
     <color name="colorBackground">@color/colorPrimary</color>
     <color name="colorAccent">#d37a7a</color>
     <color name="colorNavigationBar">#FF000000</color>
+    <color name="colorSurface">#FFF</color>
 
     <!-- Preview -->
     <color name="bubbleIn">#FFF</color>
