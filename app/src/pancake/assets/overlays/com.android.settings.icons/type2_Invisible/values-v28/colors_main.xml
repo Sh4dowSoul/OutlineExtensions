@@ -36,4 +36,15 @@
     <color name="homepage_pewdiepie_background">#00000000</color>
     <color name="homepage_venom_background">#00000000</color>
     <color name="omni_logo_color">#00000000</color>
+
+    <!-- Owls Nest -->
+    <color name="owlsnest_oval_advanced">#00000000</color>
+    <color name="owlsnest_oval_buttons">#00000000</color>
+    <color name="owlsnest_oval_gesture">#00000000</color>
+    <color name="owlsnest_oval_lockscreen">#00000000</color>
+    <color name="owlsnest_oval_nav">#00000000</color>
+    <color name="owlsnest_oval_notif">#00000000</color>
+    <color name="owlsnest_oval_qs">#00000000</color>
+    <color name="owlsnest_oval_recents">#00000000</color>
+    <color name="owlsnest_oval_status">#00000000</color>
 </resources>
