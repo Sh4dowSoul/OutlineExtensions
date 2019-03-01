@@ -37,4 +37,18 @@
     <color name="homepage_venom_background">#00000000</color>
     <color name="homepage_aicpextras_background">#00000000</color>
     <color name="omni_logo_color">#00000000</color>
+
+    <!-- DotOS -->
+    <color name="icon_color_dotextras">#00000000</color>
+    <color name="dot_dashboard_wireless">#00000000</color>
+    <color name="dot_dashboard_devices_other">#00000000</color>
+    <color name="dot_dashboard_apps">#00000000</color>
+    <color name="dot_dashboard_battery">#00000000</color>
+    <color name="dot_dashboard_display">#00000000</color>
+    <color name="dot_dashboard_sound">#00000000</color>
+    <color name="dot_dashboard_storage">#00000000</color>
+    <color name="dot_dashboard_security">#00000000</color>
+    <color name="dot_dashboard_accounts">#00000000</color>
+    <color name="dot_dashboard_accessibility">#00000000</color>
+    <color name="dot_dashboard_system">#00000000</color>
 </resources>

@@ -50,4 +50,18 @@
     <color name="owlsnest_oval_lockscreen">@android:color/holo_green_light</color>
     <color name="owlsnest_oval_gesture">@android:color/holo_red_light</color>
     <color name="owlsnest_oval_advanced">@android:color/holo_purple</color>
+
+    <!-- DotOS -->
+    <color name="icon_color_dotextras">@android:color/holo_blue_light</color>
+    <color name="dot_dashboard_wireless">@android:color/holo_blue_light</color>
+    <color name="dot_dashboard_devices_other">@android:color/holo_green_light</color>
+    <color name="dot_dashboard_apps">@android:color/holo_red_light</color>
+    <color name="dot_dashboard_battery">@*android:color/holo_purple</color>
+    <color name="dot_dashboard_display">@android:color/holo_orange_light</color>
+    <color name="dot_dashboard_sound">@android:color/holo_blue_light</color>
+    <color name="dot_dashboard_storage">@android:color/holo_green_light</color>
+    <color name="dot_dashboard_security">@android:color/holo_red_light</color>
+    <color name="dot_dashboard_accounts">@*android:color/holo_purple</color>
+    <color name="dot_dashboard_accessibility">@android:color/holo_orange_light</color>
+    <color name="dot_dashboard_system">@android:color/holo_green_light</color>
 </resources>
