@@ -38,6 +38,7 @@
     <color name="homepage_pewdiepie_background">@android:color/holo_blue_light</color>
     <color name="homepage_venom_background">@android:color/holo_blue_light</color>
     <color name="homepage_aicpextras_background">@android:color/holo_orange_light</color>
+    <color name="homepage_evolution_background">@android:color/holo_orange_light</color>
     <color name="omni_logo_color">@android:color/holo_blue_light</color>
 
     <!-- Owls Nest -->
