@@ -19,7 +19,7 @@ android {
         targetSdkVersion 28
 
         versionCode 20
-        versionName "10.2"
+        versionName "10.3"
 
         buildConfigField "String", "IV_KEY", "\"" + IV_KEY + "\""
         buildConfigField "byte[]", "DECRYPTION_KEY", String.valueOf("\"" + KEY + "\"").replace("\"", "").replace("[", "{").replace("]", "}")
