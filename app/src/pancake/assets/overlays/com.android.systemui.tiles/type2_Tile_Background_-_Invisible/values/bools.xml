@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Enable custom QS Tinting -->
+    <bool name="config_enable_qs_tile_tinting">true</bool>
+</resources>
