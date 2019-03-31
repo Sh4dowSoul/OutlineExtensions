@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="system_icons_keyguard_padding_end">-100dip</dimen>
+</resources>
