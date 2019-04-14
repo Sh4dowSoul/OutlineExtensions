@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical"
+    android:id="@*com.android.settings:id/dashboard_tile"
+    android:background="?android:selectableItemBackground"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@*com.android.settings:dimen/dashboard_tile_minimum_height"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="@*com.android.settings:dimen/dashboard_tile_image_size"
+        android:layout_height="@*com.android.settings:dimen/dashboard_tile_image_size"
+        android:scaleType="centerInside"
+        android:layout_marginStart="@*com.android.settings:dimen/dashboard_tile_image_margin"
+        android:layout_marginEnd="@*com.android.settings:dimen/dashboard_tile_image_margin"
+        android:tint="#00000000"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textAppearance="@*com.android.settings:style/TextAppearance.TileTitle"
+            android:ellipsize="marquee"
+            android:id="@android:id/title"
+            android:fadingEdge="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+
+        <TextView
+            android:textAppearance="@*com.android.settings:style/TextAppearance.Small"
+            android:textColor="?android:textColorSecondary"
+            android:ellipsize="end"
+            android:id="@android:id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingEnd="@*com.android.settings:dimen/dashboard_tile_image_margin" />
+    </LinearLayout>
+</LinearLayout>
