@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Backgrounds -->
-    <color name="background_material_dark">#2e3441</color>                                          <!-- Primary Background -->
-    <color name="background_dark">#373D49</color>                                                   <!-- Background Darker -->
+    <color name="background_material_dark">#2e3441</color>                                          <!-- Main -->
+    <color name="background_floating_material_dark">#373D49</color>                                 <!-- Surface -->
 </resources>
