@@ -18,8 +18,8 @@ android {
         applicationId "com.schnettler.outlinecolors"
         targetSdkVersion 28
 
-        versionCode 25
-        versionName "12"
+        versionCode 27
+        versionName "12.0.1"
 
         buildConfigField "String", "IV_KEY", "\"" + IV_KEY + "\""
         buildConfigField "byte[]", "DECRYPTION_KEY", String.valueOf("\"" + KEY + "\"").replace("\"", "").replace("[", "{").replace("]", "}")
@@ -59,6 +59,12 @@ android {
                     versionCode 2800 + android.defaultConfig.versionCode
                     dimension "android"
                     versionNameSuffix "P"
+                }
+                q {
+                    minSdkVersion 28
+                    versionCode 2800 + android.defaultConfig.versionCode
+                    dimension "android"
+                    versionNameSuffix "Q"
                 }
             }
         }
