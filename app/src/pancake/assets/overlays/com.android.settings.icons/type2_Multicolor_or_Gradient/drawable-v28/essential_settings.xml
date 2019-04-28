@@ -19,13 +19,11 @@
             android:viewportHeight="24.0"
             android:tint="?android:colorControlNormal">
             <path
-                android:strokeColor="@android:color/holo_red_light"
+                android:strokeColor="@android:color/holo_red_dark"
                 android:strokeWidth="1.5"
                 android:strokeLineCap="round"
                 android:strokeLineJoin="round"
-                android:pathData="M3 17.824V6.176h9.686c1.668 0 3.02
-  1.352 3.02 3.02v8.628M9.353 9.412v8.412M21
-  6.176v11.648" />
+                android:pathData="M11.304 6.152H23v11.696H11.304V6.152zM4.342 8.658c1.846 0 3.342 1.496 3.342 3.342s-1.496 3.342-3.342 3.342S1 13.846 1 12s1.496-3.342 3.342-3.342zm12.81 0c1.846 0 3.342 1.496 3.342 3.342s-1.496 3.342-3.342 3.342S13.81 13.846 13.81 12s1.496-3.342 3.342-3.342z" />
         </vector>
     </item>
 </layer-list>
