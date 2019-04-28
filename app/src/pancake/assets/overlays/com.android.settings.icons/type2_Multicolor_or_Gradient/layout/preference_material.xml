@@ -8,8 +8,7 @@
     android:minHeight="?android:listPreferredItemHeightSmall"
     android:paddingStart="?android:listPreferredItemPaddingStart"
     android:paddingEnd="?android:listPreferredItemPaddingEnd"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/com.android.settings">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
         android:gravity="start|center"
@@ -26,9 +25,8 @@
             android:id="@android:id/icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:maxHeight="48.0dip"
-            app:maxWidth="48.0dip"
-            android:tint="#00000000"/>
+            android:tint="#00000000"
+            style="@*com.android.settings:style/Base.TextAppearance.AppCompat.Large.Inverse"/>
     </LinearLayout>
 
     <RelativeLayout

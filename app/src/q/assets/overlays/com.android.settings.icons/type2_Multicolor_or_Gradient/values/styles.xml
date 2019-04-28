@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.TextAppearance.AppCompat.Large.Inverse" parent="@*android:style/TextAppearance.Material.Large.Inverse">
+        <item name="*com.android.settings:maxHeight">48dp</item>
+        <item name="*com.android.settings:maxWidth">48dp</item>
+    </style>
+</resources>
