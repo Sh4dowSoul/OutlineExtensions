@@ -1,13 +1,15 @@
 <resources>
     <!-- Icon -->
-    <color name="icon_accent">#7db694</color>
-    <color name="icon_background">#F5F5F5</color>
-    <color name="icon_foreground_drop">#000000</color>
-    <dimen name="icon_foreground_drop_opacity">0.75</dimen>
+    <color name="icon_background">#e7f2eb</color>
+    <color name="icon_foreground">#c5dfcf</color>
+    <color name="icon_icon">#a1c9b1</color>
+    <string name="icon_icon_path">M41.132 46.026l12.157-6.789c.474-.316.948-.316 1.422 0l12.157 6.789c.474.316.79.79.79 1.263v13.422c0 .631-.316 1.105-.79 1.263l-12.157 6.789c-.474.316-.948.316-1.422 0l-12.157-6.631c-.474-.316-.79-.79-.79-1.264V47.447c0-.631.316-1.105.79-1.421zm-.574.596l12.731 7.141c.474.316.948.316 1.422 0l12.74-7.148M54 54.079V69</string>
 
     <!-- HeroImage -->
-    <color name="hero_background">#F5F5F5</color>
-    <color name="hero_foreground">#FFFFFF</color>
-    <color name="hero_accent">@color/icon_accent</color>
-    <color name="hero_icon">@color/icon_foreground_drop</color>
+    <color name="hero_background">#e7f2eb</color>
+    <color name="hero_foreground">#c5dfcf</color>
+    <color name="hero_accent">@color/icon_icon</color>
+    <color name="hero_icon">@color/hero_accent</color>
+    <dimen name="hero_foreground_drop_opacity">1</dimen>
+    <string name="hero_icon_path">M257.747 213.789l56.737-31.684c2.211-1.473 4.421-1.473 6.632 0l56.737 31.684c2.21 1.474 3.684 3.685 3.684 5.895v62.632c0 2.947-1.474 5.158-3.684 5.895l-56.737 31.684c-2.211 1.473-4.421 1.473-6.632 0l-56.737-30.948c-2.21-1.473-3.684-3.684-3.684-5.894v-62.632c0-2.947 1.474-5.158 3.684-6.632zm-2.674 2.778l59.411 33.328c2.211 1.473 4.421 1.473 6.632 0l59.456-33.357m-62.772 34.83V321</string>
 </resources>
