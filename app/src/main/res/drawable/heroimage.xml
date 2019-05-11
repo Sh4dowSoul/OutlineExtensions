@@ -19,7 +19,6 @@
 
     <path
         android:strokeWidth="20"
-        android:strokeAlpha="@dimen/hero_foreground_drop_opacity"
         android:strokeColor="@color/hero_icon"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"

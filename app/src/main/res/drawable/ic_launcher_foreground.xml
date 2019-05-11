@@ -6,7 +6,7 @@
 
     <path
         android:name="Cutout"
-        android:fillColor="@color/icon_foreground"
+        android:fillColor="@color/icon_accent"
         android:pathData="M108 0v108H0V0h108zM54 24c-16.56 0-30 13.44-30 30 0 16.56 13.44 30 30 30 16.56 0 30-13.44 30-30 0-16.56-13.44-30-30-30z"/>
 
     <path
