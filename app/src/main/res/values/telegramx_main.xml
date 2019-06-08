@@ -5,8 +5,6 @@
         <item>headerBackground</item>
         <item>headerLightBackground</item>
     </string-array>
-
-    <!-- Accent Color -->
     <string-array name="accent">
         <item>avatarSavedMessages</item>
         <item>bubbleIn_textLink</item>
@@ -25,17 +23,13 @@
         <item>togglerActive</item>
         <item>textNeutral</item>
     </string-array>
-
-    <!-- Accent Color Transparent -->
-    <string-array name="accent_transparent">
+    <string-array name="accentBlend">
         <item>bubbleOut_background</item>
         <item>textLinkPressHighlight</item>
         <item>togglerNegativeBackground</item>
         <item>textSelectionHighlight</item>
         <item>togglerActiveBackground</item>
     </string-array>
-
-    <!-- Red Color -->
     <string-array name="red">
         <item>avatarPink</item>
         <item>avatarRed</item>
@@ -51,8 +45,6 @@
         <item>togglerNegative</item>
         <item>attachContact</item>
     </string-array>
-
-    <!-- Blue Color -->
     <string-array name="blue">
         <item>avatarBlue</item>
         <item>avatarCyan</item>
@@ -62,8 +54,6 @@
         <item>attachInlineBot</item>
         <item>attachPhoto</item>
     </string-array>
-
-    <!-- Green Color -->
     <string-array name="green">
         <item>avatarGreen</item>
         <item>circleButtonNewSecret</item>
@@ -75,8 +65,6 @@
         <item>textSecure</item>
         <item>attachLocation</item>
     </string-array>
-
-    <!-- Orange Color -->
     <string-array name="orange">
         <item>avatarOrange</item>
         <item>avatarYellow</item>
@@ -86,15 +74,11 @@
         <item>nameYellow</item>
         <item>attachFile</item>
     </string-array>
-
-    <!-- Purple Color -->
     <string-array name="purple">
         <item>avatarViolet</item>
         <item>nameViolet</item>
     </string-array>
-
-    <!-- Bubble Out Text -->
-    <string-array name="textColor_bubbleOut">
+    <string-array name="textWhite">
         <item>bubbleOut_messageAuthor</item>
         <item>bubbleOut_progress</item>
         <item>bubbleOut_text</item>

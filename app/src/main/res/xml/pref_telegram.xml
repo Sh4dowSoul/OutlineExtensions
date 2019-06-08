@@ -1,5 +1,13 @@
 <androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <PreferenceCategory android:title="Telegram">
+    <SwitchPreferenceCompat
+        android:title="@string/legacy_title"
+        android:summary="@string/legacy_description"
+        android:key="@string/legacy_key"
+        android:defaultValue="false"
+        android:icon="@drawable/ic_settings_telegram"/>
+    </PreferenceCategory>
     <PreferenceCategory android:title="App Theme">
         <SwitchPreferenceCompat
             android:title="@string/dark_title"

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="legacyLightBackground">
+        <item>chat_wallpaper</item>
+        <item>chat_emojiPanelBackground</item>
+        <item>windowBackgroundGray</item>
+        <item>chat_inBubble</item>
+        <item>chat_inBubbleSelected</item>
+    </string-array>
+    <string-array name="legacyLightBackgroundElevated">
+        <item>chat_serviceBackground</item>
+        <item>chat_serviceBackgroundSelected</item>
+        <item>chat_inLoader</item>
+        <item>chat_inLoaderSelected</item>
+    </string-array>
+    <string-array name="legacyLightAccent">
+        <item>chat_topPanelTitle</item>
+        <item>chat_topPanelLine</item>
+        <item>chat_inReplyNameText</item>
+        <item>chat_inReplyLine</item>
+        <item>chats_menuTopBackground</item>
+    </string-array>
+    <string-array name="legacyLightPrimaryText">
+        <item>actionBarDefaultIcon</item>
+        <item>actionBarDefaultTitle</item>
+        <item>profile_title</item>
+        <item>profile_status</item>
+        <item>avatar_actionBarIconBlue</item>
+        <item>chat_inFileNameText</item>
+        <item>chat_inFileNameSelectedText</item>
+        <item>chats_nameMessage</item>
+        <item>chat_serviceText</item>
+        <item>chat_searchPanelText</item>
+        <item>actionBarDefaultSearch</item>
+    </string-array>
+    <string-array name="legacyLightSecondaryText">
+        <item>actionBarDefaultSubtitle</item>
+        <item>chats_actionMessage</item>
+        <item>chat_serviceIcon</item>
+    </string-array>
+</resources>

@@ -5,10 +5,14 @@
     <string name="toolbar_key">toolbar</string>
     <string name="background_key">background_main</string>
     <string name="palette_key">color_palette</string>
+    <string name="legacy_key">legacy_theme</string>
 
     <string name="dark_title">Dark Theme</string>
     <string name="dark_summary">Create a dark Theme</string>
 
     <string name="dynamic_title">Dynamic Theme</string>
     <string name="dynamic_summary">Create a dynamic Theme based on your System</string>
+
+    <string name="legacy_title">Legacy Mode</string>
+    <string name="legacy_description">Generate Legacy (Telegram) Theme</string>
 </resources>

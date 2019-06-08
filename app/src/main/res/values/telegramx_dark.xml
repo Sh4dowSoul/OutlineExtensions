@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Background Color -->
-    <string-array name="dark_backgrounds">
+    <string-array name="darkBackground">
         <item>background</item>                                                                     <!-- Main -->
         <item>bubble_chatBackground</item>
         <item>chatBackground</item>
@@ -12,9 +11,7 @@
         <item>passcode</item>
         <item>unread</item>
     </string-array>
-
-    <!-- Background Color Darker -->
-    <string-array name="dark_backgrounds_darker">
+    <string-array name="darkBackgroundElevated">
         <item>bubble_date_noWallpaper</item>                                                        <!-- Date Bubble-->
         <item>bubble_unread_noWallpaper</item>                                                      <!-- Unread Bubble -->
         <item>bubbleIn_background</item>                                                            <!-- Bubble -In -->
@@ -24,9 +21,7 @@
         <item>file</item>
         <item>separator</item>                                                                      <!-- Divider -->
     </string-array>
-
-    <!-- ColorControlNormal -->
-    <string-array name="dark_colorControlNormal">
+    <string-array name="darkSecondaryText">
         <item>background_icon</item>
         <item>background_text</item>
         <item>background_textLight</item>
@@ -36,9 +31,7 @@
         <item>textLight</item>
         <item>badgeMuted</item>
     </string-array>
-
-    <!-- Text Color Primary -->
-    <string-array name="dark_textColor">
+    <string-array name="darkPrimaryText">
         <item>icon</item>
         <item>messageAuthor</item>
     </string-array>

@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         ft.replace(R.id.container, new TelegramFragment());
         ft.commit();
 
-        getSupportActionBar().setTitle("Telegram X Generator");
+        getSupportActionBar().setTitle("Telegram Theme Generator");
     }
 
     @Override

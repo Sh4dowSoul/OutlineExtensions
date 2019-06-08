@@ -43,4 +43,11 @@ public class Util {
         }
     }
 
+    static String createLegacyLines(String[] array, String color) {
+        StringBuilder result = new StringBuilder();
+        for (String s : array) {
+            result.append(s).append("=").append(color).append("\n");
+        }
+        return result.toString();
+    }
 }

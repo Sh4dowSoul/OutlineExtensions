@@ -11,6 +11,7 @@ public class Theme {
 
     private boolean isDark;
     private boolean isDynamic;
+    private boolean legacy;
 
     private String accentMain;
     private boolean useAccentAsPrimary;
@@ -144,63 +145,113 @@ public class Theme {
     public String toString() {
         StringBuilder result = new StringBuilder();
 
-        result.append(String.format("!\nname: %s\ntime: %s\nauthor: Sh4dowSoul\n@\nbubbleOutline: 0\nwallpaperId: 0\nwallpaperUsageId: 2\nlightStatusBar: %s\nparentTheme: %s\n#\n\nstatusBar: #0000", name, System.currentTimeMillis() / 1000L,isDark() ? 0 : isUseAccentAsPrimary() ? 0 : 1 ,isDark() ? "2" : "11"));
+        if (!legacy) {
+            result.append(String.format("!\nname: %s\ntime: %s\nauthor: Sh4dowSoul\n@\nbubbleOutline: 0\nwallpaperId: 0\nwallpaperUsageId: 2\nlightStatusBar: %s\nparentTheme: %s\n#\n\nstatusBar: #0000", name, System.currentTimeMillis() / 1000L, isDark() ? 0 : isUseAccentAsPrimary() ? 0 : 1, isDark() ? "2" : "11"));
 
-        //Accent
-        result.append(Util.arrayToString(context.getResources().getStringArray(R.array.accent)));
-        result.append(getAccentMain());
-
-        //Accent Transparent
-        result.append(Util.arrayToString(context.getResources().getStringArray(R.array.accent_transparent)));
-        result.append(Util.blendColor(getAccentMain(), getBackgroundMain(), isDark ? 0.2f : 0.6f));
-
-        //Color Palette
-        result.append(Util.arrayToString(context.getResources().getStringArray(R.array.red)));
-        result.append(getRed());
-        result.append(Util.arrayToString(context.getResources().getStringArray(R.array.green)));
-        result.append(getGreen());
-        result.append(Util.arrayToString(context.getResources().getStringArray(R.array.blue)));
-        result.append(getBlue());
-        result.append(Util.arrayToString(context.getResources().getStringArray(R.array.orange)));
-        result.append(getOrange());
-        result.append(Util.arrayToString(context.getResources().getStringArray(R.array.purple)));
-        result.append(getPurple());
-
-
-        //Background
-        result.append(Util.arrayToString(context.getResources().getStringArray(isDark() ? R.array.dark_backgrounds : R.array.light_backgrounds)));
-        result.append(getBackgroundMain());
-        //Background Darker
-        result.append(Util.arrayToString(context.getResources().getStringArray(isDark ? R.array.dark_backgrounds_darker : R.array.light_backgrounds_darker)));
-        result.append(isDark ? Util.blendColor("#FFFFFF", getBackgroundMain(), 0.05f) : "#F2F3F4");
-
-        //Primary
-        result.append(Util.arrayToString(context.getResources().getStringArray(R.array.primary)));
-        result.append(isUseAccentAsPrimary() ? getAccentMain() : getBackgroundMain());
-
-        //Text
-        result.append(Util.arrayToString(context.getResources().getStringArray(R.array.textColor_bubbleOut)));
-        result.append("#FFFFFF");
-        result.append(Util.arrayToString(context.getResources().getStringArray(isDark ? R.array.dark_textColor : R.array.light_textColor)));
-        result.append(isDark ? "#FFF" : "#0009");
-
-        if (!isDark) {
-            //Header Text
-            if (!useAccentAsPrimary) {
-                result.append(Util.arrayToString(context.getResources().getStringArray(R.array.light_headerPrimary)));
-                result.append("#000000B2");
-                result.append(Util.arrayToString(context.getResources().getStringArray(R.array.light_headerSecondary)));
-                result.append("#0006");
-            }
-            //Accent Light
-            result.append(Util.arrayToString(context.getResources().getStringArray(R.array.light_accent)));
+            //Accent
+            result.append(Util.arrayToString(context.getResources().getStringArray(R.array.accent)));
             result.append(getAccentMain());
-        } else {
-            //Accent Light
-            result.append(Util.arrayToString(context.getResources().getStringArray(R.array.dark_colorControlNormal)));
-            result.append("#BCBCC0");
-        }
 
+            //Accent Transparent
+            result.append(Util.arrayToString(context.getResources().getStringArray(R.array.accentBlend)));
+            result.append(Util.blendColor(getAccentMain(), getBackgroundMain(), isDark ? 0.2f : 0.6f));
+
+            //Color Palette
+            result.append(Util.arrayToString(context.getResources().getStringArray(R.array.red)));
+            result.append(getRed());
+            result.append(Util.arrayToString(context.getResources().getStringArray(R.array.green)));
+            result.append(getGreen());
+            result.append(Util.arrayToString(context.getResources().getStringArray(R.array.blue)));
+            result.append(getBlue());
+            result.append(Util.arrayToString(context.getResources().getStringArray(R.array.orange)));
+            result.append(getOrange());
+            result.append(Util.arrayToString(context.getResources().getStringArray(R.array.purple)));
+            result.append(getPurple());
+
+
+            //Background
+            result.append(Util.arrayToString(context.getResources().getStringArray(isDark() ? R.array.darkBackground : R.array.lightBackground)));
+            result.append(getBackgroundMain());
+
+            //Background Darker
+            result.append(Util.arrayToString(context.getResources().getStringArray(isDark ? R.array.darkBackgroundElevated : R.array.lightBackgroundElevated)));
+            result.append(isDark ? Util.blendColor("#FFFFFF", getBackgroundMain(), 0.05f) : "#F2F3F4");
+
+            //Primary
+            result.append(Util.arrayToString(context.getResources().getStringArray(R.array.primary)));
+            result.append(isUseAccentAsPrimary() ? getAccentMain() : getBackgroundMain());
+
+            //Text
+            result.append(Util.arrayToString(context.getResources().getStringArray(R.array.textWhite)));
+            result.append("#FFFFFF");
+            result.append(Util.arrayToString(context.getResources().getStringArray(isDark ? R.array.darkPrimaryText : R.array.light_textColor)));
+            result.append(isDark ? "#FFF" : "#0009");
+
+            if (!isDark) {
+                //Header Text
+                if (!useAccentAsPrimary) {
+                    result.append(Util.arrayToString(context.getResources().getStringArray(R.array.lightPrimaryText)));
+                    result.append("#000000B2");
+                    result.append(Util.arrayToString(context.getResources().getStringArray(R.array.lightSecondaryText)));
+                    result.append("#0006");
+                }
+                //Accent Light
+                result.append(Util.arrayToString(context.getResources().getStringArray(R.array.lightAccent)));
+                result.append(getAccentMain());
+            } else {
+                //Accent Light
+                result.append(Util.arrayToString(context.getResources().getStringArray(R.array.darkSecondaryText)));
+                result.append("#BCBCC0");
+            }
+        } else {
+            //Primary
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyPrimary), isUseAccentAsPrimary() ? getAccentMain() : getBackgroundMain()));
+
+            //Accent
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyAccent), getAccentMain()));
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyAccentBlend), Util.blendColor(getAccentMain(), getBackgroundMain(), isDark ? 0.2f : 0.6f)));
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyAccentTrans), getAccentMain().replace("#", "#33")));
+
+            //Background
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(isDark() ? R.array.legacyDarkBackground : R.array.legacyLightBackground), getBackgroundMain()));
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(isDark() ? R.array.legacyDarkBackgroundElevated : R.array.legacyLightBackgroundElevated), isDark() ? Util.blendColor("#FFFFFF", getBackgroundMain(), 0.05f) : "#F2F3F4"));
+
+            //Text & Icons
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(isDark() ? R.array.legacyDarkPrimaryText : R.array.light_textColor), isDark() ? "#FFFFFFFF" : "#DE000000"));
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyTextWhite),"#FFFFFF" ));
+            if (isDark()){
+                result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyDarkSecondaryText),"#80FFFFFF"));
+                result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyDarkShadow),"#00FFFFFF"));
+            } else {
+                if (!useAccentAsPrimary) {
+                    result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyLightPrimaryText),"#B2000000"));
+                    result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyLightSecondaryText), "#80000000"));
+                }
+                result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyLightAccent), getAccentMain()));
+            }
+
+            //Colors
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyRed), getRed()));
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyGreen), getGreen()));
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyBlue), getBlue()));
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyOrange), getOrange()));
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyPurple), getPurple()));
+            //Colors Transparent
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyRedTrans), getRed().replace("#", "#33")));
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyBlueTrans), getBlue().replace("#", "#33")));
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyGreenTrans), getGreen().replace("#", "#33")));
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyOrangeTrans), getOrange().replace("#", "#33")));
+            result.append(Util.createLegacyLines(context.getResources().getStringArray(R.array.legacyPurpleTrans), getPurple().replace("#", "#33")));
+        }
         return result.toString();
     }
+
+    public boolean isLegacy() {
+        return legacy;
+    }
+
+    public void setLegacy(boolean legacy) {
+        this.legacy = legacy;
+    }
+
 }

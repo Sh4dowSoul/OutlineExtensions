@@ -169,6 +169,7 @@ public class TelegramFragment extends PreferenceFragmentCompat implements Shared
         currentTheme.setAccentMain(sp.getString(getContext().getResources().getString(R.string.accent_key), "#FFFFFF"));
         currentTheme.setBackgroundMain(currentTheme.isDark() ? sp.getString(getContext().getResources().getString(R.string.background_key), "#f00") : "#FFFFFF");
         currentTheme.setColorPalette(sp.getString(getResources().getString(R.string.palette_key),"#ffffff"));
+        currentTheme.setLegacy(sp.getBoolean("legacy_theme", false));
     }
 
 
@@ -185,7 +186,7 @@ public class TelegramFragment extends PreferenceFragmentCompat implements Shared
                 String path = Environment.getExternalStorageDirectory() + File.separator + "Telegram Themes";
                 File folder = new File(path);
                 folder.mkdirs();
-                File file = new File(folder, fileName + ".tgx-theme");
+                File file = new File(folder, fileName + (currentTheme.isLegacy() ? ".attheme" : ".tgx-theme"));
 
                 String result = currentTheme.toString();
 

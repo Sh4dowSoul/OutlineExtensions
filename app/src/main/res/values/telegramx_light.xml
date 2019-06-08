@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Background Color -->
-    <string-array name="light_backgrounds">
+    <string-array name="lightBackground">
         <item>background</item>
         <item>bubble_chatBackground</item>
         <item>chatKeyboard</item>
     </string-array>
-
-    <!-- Darker Background -->
-    <string-array name="light_backgrounds_darker">
+    <string-array name="lightBackgroundElevated">
         <item>bubble_button_noWallpaper</item>
         <item>bubble_date_noWallpaper</item>
         <item>bubble_unread_noWallpaper</item>
     </string-array>
-
-    <!-- Accent Color Light -->
-    <string-array name="light_accent">
+    <string-array name="lightAccent">
         <item>bubbleIn_progress</item>
         <item>bubbleOut_chatVerticalLine</item>
         <item>chatListAction</item>
@@ -46,21 +42,15 @@
         <item>togglerPositive</item>
         <item>unreadText</item>
     </string-array>
-
-    <!-- Text Color Header -->
-    <string-array name="light_headerPrimary">
+    <string-array name="lightPrimaryText">
         <item>headerIcon</item>
         <item>headerTabActive</item>
         <item>headerTabActiveText</item>
         <item>headerText</item>
     </string-array>
-
-    <!-- Text Color Secondary Header -->
-    <string-array name="light_headerSecondary">
+    <string-array name="lightSecondaryText">
         <item>headerTabInactiveText</item>
     </string-array>
-
-    <!-- Text Color Bubble -->
     <string-array name="light_textColor">
         <item>bubble_buttonText_noWallpaper</item>
         <item>bubble_dateText_noWallpaper</item>
