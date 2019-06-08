@@ -13,6 +13,6 @@
     <string name="dynamic_title">Dynamic Theme</string>
     <string name="dynamic_summary">Create a dynamic Theme based on your System</string>
 
-    <string name="legacy_title">Legacy Mode</string>
+    <string name="legacy_title">Legacy Mode (Experimental)</string>
     <string name="legacy_description">Generate Legacy (Telegram) Theme</string>
 </resources>
