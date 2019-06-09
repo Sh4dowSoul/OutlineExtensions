@@ -51,7 +51,7 @@ public class Theme {
     @SuppressLint("ResourceType")
     public String getAccentMain() {
         if (isDynamic) {
-            return context.getResources().getString(R.color.colorAccentDynamic).replace("#ff","#");
+            return context.getResources().getString(context.getResources().getIdentifier("accent_material_dark", "color", "android")).replace("#ff","#");
         }
         return accentMain;
     }
@@ -71,7 +71,7 @@ public class Theme {
     @SuppressLint("ResourceType")
     public String getBackgroundMain() {
         if (isDark && isDynamic) {
-            return context.getResources().getString(R.color.colorBackgroundDynamic).replace("#ff","#");
+            return context.getResources().getString(context.getResources().getIdentifier("background_material_dark", "color", "android")).replace("#ff","#");
         }
         return backgroundMain;
     }
