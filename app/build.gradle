@@ -22,7 +22,7 @@ android {
         targetSdkVersion 29
 
         versionCode 35
-        versionName "13"
+        versionName "13.1"
 
         buildConfigField "String", "IV_KEY", "\"" + IV_KEY + "\""
         buildConfigField "byte[]", "DECRYPTION_KEY", String.valueOf("\"" + KEY + "\"").replace("\"", "").replace("[", "{").replace("]", "}")
