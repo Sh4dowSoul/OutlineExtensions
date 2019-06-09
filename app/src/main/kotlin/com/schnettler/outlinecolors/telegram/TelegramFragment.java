@@ -33,40 +33,36 @@ import java.util.List;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.FileProvider;
 import androidx.preference.ListPreference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreferenceCompat;
 
-import pub.devrel.easypermissions.AfterPermissionGranted;
-import pub.devrel.easypermissions.EasyPermissions;
-
 public class TelegramFragment extends PreferenceFragmentCompat implements SharedPreferences.OnSharedPreferenceChangeListener {
-    ListPreference listPreferenceBackground;
-    ListPreference listPreferenceAccent;
-    ListPreference listPreferencePalette;
-    SwitchPreferenceCompat dynamicThemeSwitch;
-    SharedPreferences sp;
-    PreferenceCategory appColorsCategory;
-    ListPreference backgroundPreference;
-    FloatingActionButton floatingActionButton;
+    private ListPreference listPreferenceBackground;
+    private ListPreference listPreferenceAccent;
+    private ListPreference listPreferencePalette;
+    private SharedPreferences sp;
+    private ListPreference backgroundPreference;
+    private FloatingActionButton floatingActionButton;
 
-    String fileName = "";
+    private String fileName = "";
     private static final int STORAGE_REQUEST = 1;
 
-    LinearLayout bubbleOut;
-    TextView colorHeader;
-    TextView bubbleHeader;
-    ConstraintLayout bottomsheet;
-    TextView previewBlue;
-    TextView previewRed;
-    TextView previewGreen;
-    TextView previewOrange;
-    TextView previewPurple;
+    private LinearLayout bubbleOut;
+    private TextView colorHeader;
+    private TextView bubbleHeader;
+    private ConstraintLayout bottomsheet;
+    private TextView previewBlue;
+    private TextView previewRed;
+    private TextView previewGreen;
+    private TextView previewOrange;
+    private TextView previewPurple;
 
-    Theme currentTheme;
-    BottomSheetBehavior bottomSheetBehavior;
+    private Theme currentTheme;
+    private BottomSheetBehavior bottomSheetBehavior;
 
     @Override
     public void onCreatePreferences(Bundle bundle, String s) {
@@ -77,11 +73,11 @@ public class TelegramFragment extends PreferenceFragmentCompat implements Shared
         listPreferenceBackground = (ListPreference) findPreference(getContext().getResources().getString(R.string.background_key));
         listPreferenceAccent = (ListPreference) findPreference(getContext().getResources().getString(R.string.accent_key));
         listPreferencePalette = (ListPreference) findPreference(getContext().getResources().getString(R.string.palette_key));
-        dynamicThemeSwitch = (SwitchPreferenceCompat) findPreference(getContext().getResources().getString(R.string.dynamic_theme_key));
-        appColorsCategory = (PreferenceCategory) findPreference("app_colors_key") ;
+        SwitchPreferenceCompat dynamicThemeSwitch = (SwitchPreferenceCompat) findPreference(getContext().getResources().getString(R.string.dynamic_theme_key));
+        PreferenceCategory appColorsCategory = (PreferenceCategory) findPreference("app_colors_key");
         PackageManager pm = getContext().getPackageManager();
         boolean supportedThemesInstalled = Util.isPackageInstalled("com.schnettler.outline", pm) | Util.isPackageInstalled("com.schnettler.ethereal", pm);
-        dynamicThemeSwitch.setEnabled(dynamicThemeSwitch.isChecked() ? true : supportedThemesInstalled);
+        dynamicThemeSwitch.setEnabled(dynamicThemeSwitch.isChecked() || supportedThemesInstalled);
         backgroundPreference = (ListPreference) findPreference(getContext().getResources().getString(R.string.background_key));
         if (supportedThemesInstalled | dynamicThemeSwitch.isChecked()){
             //Add Depency
@@ -108,15 +104,15 @@ public class TelegramFragment extends PreferenceFragmentCompat implements Shared
             lp.setMargins(margin,0,margin,0);
             final EditText input = new EditText(getContext());
             input.setLayoutParams(lp);
-            input.setGravity(android.view.Gravity.TOP|android.view.Gravity.LEFT);
+            input.setGravity(android.view.Gravity.TOP|android.view.Gravity.START);
             StringBuilder fileNameString = new StringBuilder();
             fileNameString.append(currentTheme.isDark() ? "Ethereal" : "Outline");
             if (!currentTheme.isDynamic()){
                 if(currentTheme.isDark()) {
-                    fileNameString.append("_" + listPreferenceBackground.getEntry());
+                    fileNameString.append("_").append(listPreferenceBackground.getEntry());
                 }
-                fileNameString.append("_" + listPreferencePalette.getEntry().toString().replace(" ",""));
-                fileNameString.append("_" + listPreferenceAccent.getEntry());
+                fileNameString.append("_").append(listPreferencePalette.getEntry().toString().replace(" ", ""));
+                fileNameString.append("_").append(listPreferenceAccent.getEntry());
                 if (currentTheme.isUseAccentAsPrimary()){
                     fileNameString.append("_ColoredToolbar");
                 }
@@ -172,60 +168,28 @@ public class TelegramFragment extends PreferenceFragmentCompat implements Shared
         currentTheme.setLegacy(sp.getBoolean("legacy_theme", false));
     }
 
-
-    @AfterPermissionGranted(STORAGE_REQUEST)
     private void createTheme() {
-        sp = PreferenceManager.getDefaultSharedPreferences(getContext());
-        String[] perms = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
-        //Check Permission
-        if (EasyPermissions.hasPermissions(getContext(), perms)) {
-            if (Util.isExternalStorageWritable()) {
-                currentTheme.setName(fileName);
+        currentTheme.setName(fileName);
+        String result = currentTheme.toString();
+        try {
+            File outputDir = new File(getContext().getCacheDir(), "themes") ;
+            outputDir.mkdir();
+            File outputFile = new File(outputDir + File.separator + fileName + (currentTheme.isLegacy() ? ".attheme" : ".tgx-theme"));
+            FileOutputStream fOut = new FileOutputStream(outputFile);
+            OutputStreamWriter myOutWriter = new OutputStreamWriter(fOut);
+            myOutWriter.append(result);
+            myOutWriter.close();
+            fOut.flush();
+            fOut.close();
 
-                //Create Save Directory
-                String path = Environment.getExternalStorageDirectory() + File.separator + "Telegram Themes";
-                File folder = new File(path);
-                folder.mkdirs();
-                File file = new File(folder, fileName + (currentTheme.isLegacy() ? ".attheme" : ".tgx-theme"));
-
-                String result = currentTheme.toString();
-
-                try {
-                    file.createNewFile();
-                    FileOutputStream fOut = new FileOutputStream(file);
-                    OutputStreamWriter myOutWriter = new OutputStreamWriter(fOut);
-                    myOutWriter.append(result);
-
-                    myOutWriter.close();
-
-                    fOut.flush();
-                    fOut.close();
-
-                    Snackbar.make(getActivity().findViewById(android.R.id.content), "Theme saved",
-                            Snackbar.LENGTH_LONG).setAction("Open Telegram X", view -> {
-                        initShareIntent("challegram", file.getAbsolutePath());
-                    }).setAnchorView(floatingActionButton).show();
-                } catch (IOException e) {
-                    Log.e("Exception", "File write failed: " + e.toString());
-                }
-            } else {
-                Log.e("Storage", "No Storage Access");
-            }
-        } else {
-            // Do not have permissions, request them now
-            EasyPermissions.requestPermissions(this, "Storage access needed to save File", STORAGE_REQUEST, perms);
+            Uri contentUri = FileProvider.getUriForFile(getContext(), "com.schnettler.outlinecolors.fileprovider", outputFile);
+            initShareIntent(currentTheme.isLegacy() ?"telegram" : "challegram", contentUri);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-
-        // Forward results to EasyPermissions
-        EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
-    }
-
-    private void initShareIntent(String type, String myPath) {
+    private void initShareIntent(String type, Uri uri) {
         StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
         StrictMode.setVmPolicy(builder.build());
         boolean found = false;
@@ -238,7 +202,7 @@ public class TelegramFragment extends PreferenceFragmentCompat implements Shared
             for (ResolveInfo info : resInfo) {
                 if (info.activityInfo.packageName.toLowerCase().contains(type) ||
                         info.activityInfo.name.toLowerCase().contains(type) ) {
-                    share.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(myPath)) ); // Optional, just if you wanna share an image.
+                    share.putExtra(Intent.EXTRA_STREAM, uri);
                     share.setPackage(info.activityInfo.packageName);
                     found = true;
                     break;
