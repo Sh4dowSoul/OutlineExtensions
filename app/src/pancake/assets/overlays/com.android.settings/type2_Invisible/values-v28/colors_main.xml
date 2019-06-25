@@ -39,6 +39,8 @@
     <color name="homepage_evolution_background">#00000000</color>
     <color name="homepage_cosp_background">#00000000</color>
     <color name="abc_settings_icon_background">#00000000</color>
+    <color name="homepage_descendant_utility_background">#00000000</color>
+    <color name="homepage_gestures_app_background">#00000000</color>
     <color name="omni_logo_color">#00000000</color>
 
     <!-- Owls Nest -->
