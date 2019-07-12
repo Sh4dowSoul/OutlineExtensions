@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Oreo+ - Notification | Text -->
+    <color name="notification_primary_text_color_light">#de000000</color>                           <!-- Title -->
+    <color name="notification_secondary_text_color_light">#de000000</color>                         <!-- Subtitle -->
+    <color name="notification_default_color">#ff757575</color>                                      <!-- App Icon & Name -->
+    <color name="notification_default_color_dark">#de000000</color>
+    <color name="notification_default_color_light">#a3202124</color>
+    <color name="notification_progress_background_color">#8a000000</color>                          <!-- ??? -->
+
+    <!-- Notification | Background -->
+    <color name="notification_material_background_color">#ffffffff</color>                          <!-- Notification Background -->
+    <color name="notification_action_list">#ffeeeeee</color>                                        <!-- Action 1 | Button Bar Background -->
+    <color name="notification_action_list_dark">#ffe0e0e0</color>                                   <!-- Action 2 | Notification Button Dark Background (for example Clock notification) -->
+
+    <!-- Exposures -->
+    <color name="sender_text_color">#de000000</color>                                               <!-- Notification sender text color -->
+    <color name="notification_snooze_text">#de000000</color>                                        <!-- Notification Snooze, Channel Name -->
+    <color name="theme_text1">#ffe5e5e5</color>                                                       <!-- Notification Confirmation -->
+
+    <!-- Notification Text - Hooks for 3rd Party Apps -->
+    <color name="holo_blue_bright">#de000000</color>                                                <!-- Primary -->
+    <color name="darker_gray">#80000000</color>                                                     <!-- Secondary -->
+</resources>
