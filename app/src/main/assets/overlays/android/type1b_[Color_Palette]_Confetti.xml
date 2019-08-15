@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary -->
+    <color name="holo_red_light">#d82253</color>
+    <color name="holo_blue_light">#419ed5</color>
+    <color name="holo_green_light">#53ba63</color>
+    <color name="holo_orange_light">#ff7e75</color>
+    <color name="holo_purple">#7c66bb</color>
+</resources>
