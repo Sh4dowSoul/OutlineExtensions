@@ -21,6 +21,8 @@
         <item>chat_messagePanelBackground</item>
         <item>chat_inLoaderPhotoSelected</item>
         <item>chat_topPanelBackground</item>
+        <item>chat_stickersHintPanel</item>
+        <item>chat_replyPanelLine</item>
     </string-array>
     <string-array name="legacyDarkBackgroundElevated">
         <item>chat_serviceBackground</item>
@@ -39,6 +41,7 @@
     <string-array name="legacyDarkSecondaryText">
         <item>profile_status</item>
         <item>chats_pinnedIcon</item>
+        <item>chats_message</item>
         <item>chats_actionMessage</item>
         <item>switchTrack</item>
         <item>chat_inSentClockSelected</item>
@@ -116,6 +119,7 @@
         <item>avatar_text</item>
         <item>key_changephoneinfo_changeText</item>
         <item>chat_searchPanelText</item>
+        <item>chat_replyPanelMessage</item>
     </string-array>
     <string-array name="legacyDarkShadow">
         <item>chat_outBubbleShadow</item>
