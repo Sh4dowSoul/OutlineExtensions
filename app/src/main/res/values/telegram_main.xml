@@ -112,7 +112,6 @@
         <item>chat_emojiPanelIconSelected</item>
         <item>checkboxSquareBackground</item>
         <item>files_folderIcon</item>
-        <item>profile_verifiedCheck</item>
         <item>chat_secretTimerText</item>
         <item>picker_enabledButton</item>
         <item>actionBarDefaultSubmenuItemIcon</item>
@@ -132,7 +131,6 @@
         <item>dialogInputFieldActivated</item>
         <item>chat_addContact</item>
         <item>chat_outPreviewInstantSelectedText</item>
-        <item>chats_verifiedCheck</item>
         <item>musicPicker_buttonIcon</item>
         <item>chat_inAudioProgress</item>
         <item>player_buttonActive</item>
@@ -165,6 +163,8 @@
         <item>chat_recordVoiceCancel</item>
         <item>chats_attachMessage</item>
         <item>chat_inContactIcon</item>
+        <item>chats_verifiedBackground</item>
+        <item>profile_verifiedBackground</item>
     </string-array>
     <string-array name="legacyAccentBlend">
         <item>chat_outBubble</item>
@@ -199,7 +199,6 @@
         <item>undo_background</item>
         <item>chat_botKeyboardButtonBackground</item>
         <item>chat_inContactBackground</item>
-        <item>chats_verifiedBackground</item>
         <item>chat_outVoiceSeekbarSelected</item>
         <item>key_chat_messagePanelVoiceLockBackground</item>
         <item>musicPicker_buttonBackground</item>
@@ -221,7 +220,6 @@
         <item>chat_outAudioSeekbarSelected</item>
         <item>chat_outAudioSeekbar</item>
         <item>chat_inVoiceSeekbar</item>
-        <item>profile_verifiedBackground</item>
     </string-array>
     <string-array name="legacyRed">
         <item>avatar_backgroundPink</item>
@@ -324,6 +322,8 @@
         <item>chat_inFileIcon</item>
         <item>chat_inFileSelectedIcon</item>
         <item>chats_menuPhoneCats</item>
+        <item>chats_verifiedCheck</item>
+        <item>profile_verifiedCheck</item>
     </string-array>
     <string-array name="legacyBlueTrans">
         <item>chat_attachFileBackground</item>
