@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'com.github.triplet.play' version '2.2.0'
+    id 'com.github.triplet.play' version '2.3.0'
 }
 
 ext {
@@ -21,8 +21,8 @@ android {
         applicationId "com.schnettler.outlinecolors"
         targetSdkVersion 29
 
-        versionCode 36
-        versionName "13.2"
+        versionCode 38
+        versionName "13.3"
 
         buildConfigField "String", "IV_KEY", "\"" + IV_KEY + "\""
         buildConfigField "byte[]", "DECRYPTION_KEY", String.valueOf("\"" + KEY + "\"").replace("\"", "").replace("[", "{").replace("]", "}")
