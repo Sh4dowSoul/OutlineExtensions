@@ -21,8 +21,8 @@ android {
         applicationId "com.schnettler.outlinecolors"
         targetSdkVersion 29
 
-        versionCode 38
-        versionName "13.3"
+        versionCode 39
+        versionName "13.4"
 
         buildConfigField "String", "IV_KEY", "\"" + IV_KEY + "\""
         buildConfigField "byte[]", "DECRYPTION_KEY", String.valueOf("\"" + KEY + "\"").replace("\"", "").replace("[", "{").replace("]", "}")
