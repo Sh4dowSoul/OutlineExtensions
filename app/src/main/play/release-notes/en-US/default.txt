@@ -1,14 +1,12 @@
-Release 13.6
+Release 13.7
 
-Colors
-• Sunset Palette (Amethyst #9898BC, Bouquet #BD84A4, Cherub #FAE0DF, San Marino #487BA6, Sundown #FEACB8)
-• Accent (Persimmon #FE5757, Geraldine #FE8181)
-• Background (Cod Gray #111010)
-
-Network Icons (Q)
-• Filled Network Icons (Rounded Stock)
-• Soft Filled Network Icons
+Fresh Palette
+• Bittersweet #FF7E5F
+• Buttercup #F0AA52
+• Grape #6C4E70
+• Highland #859974
+• Mandy #E25F6F
+• Venice #08708B)
 
 Settings (Q)
-• Support ROM Icon Backgrounds
-• Improve Wellbeing Background (Digital Wellbeing Overlay)
+• Support more ROM Icon Backgrounds
