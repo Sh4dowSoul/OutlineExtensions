@@ -105,5 +105,4 @@ Thumbs.db
 #Keystores, Changelogs & API Keys
 #############################################################################
 *.jks
-default.txt
 PlayAPI.json
