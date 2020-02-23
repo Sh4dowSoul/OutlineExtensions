@@ -46,6 +46,8 @@
     <color name="abc_settings_icon_background">@android:color/holo_red_light</color>
     <color name="homepage_descendant_utility_background">@android:color/holo_green_light</color>
     <color name="homepage_gestures_app_background">@android:color/holo_blue_light</color>
+    <color name="homepage_validus_background">@android:color/holo_red_light</color>
+    <color name="homepage_du_themes_background">@android:color/holo_orange_light</color>
     <color name="ion_icon_tint_color">@android:color/holo_blue_light</color>
     <color name="omni_logo_color">@android:color/holo_blue_light</color>
 </resources>

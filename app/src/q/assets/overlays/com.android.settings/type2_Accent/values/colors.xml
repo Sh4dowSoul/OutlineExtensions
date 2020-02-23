@@ -48,6 +48,8 @@
     <color name="homepage_xenonhd_background">@*android:color/accent_material_dark</color>
     <color name="homepage_extra_background">@*android:color/accent_material_dark</color>
     <color name="homepage_derp_background">@*android:color/accent_material_dark</color>
+    <color name="homepage_validus_background">@*android:color/accent_material_dark</color>
+    <color name="homepage_du_themes_background">@*android:color/accent_material_dark</color>
     <color name="ion_icon_tint_color">@*android:color/accent_material_dark</color>
     <color name="omni_logo_color">@*android:color/accent_material_dark</color>
 </resources>
