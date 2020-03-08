@@ -1,12 +1,4 @@
-Release 13.7
+Release 13.8
 
-Fresh Palette
-• Bittersweet #FF7E5F
-• Buttercup #F0AA52
-• Grape #6C4E70
-• Highland #859974
-• Mandy #E25F6F
-• Venice #08708B)
-
-Settings (Q)
-• Support more ROM Icon Backgrounds
+Update
+• WhatsApp Tweaks for 2.20.64
