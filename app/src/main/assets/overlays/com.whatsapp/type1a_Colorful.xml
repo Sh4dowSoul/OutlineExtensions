@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- App Colors -->
-    <color name="primary">@android:color/holo_green_light</color>
-    <color name="primary_dark">@android:color/holo_green_light</color>
+    <color name="paletteSurface_3dp">@android:color/holo_green_light</color>                                            <!-- Appbar -->
+    <color name="paletteSurface_dark">@android:color/holo_green_light</color>                                           <!-- Statusbar -->
 </resources>
