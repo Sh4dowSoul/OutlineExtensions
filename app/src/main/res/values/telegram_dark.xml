@@ -37,6 +37,7 @@
         <item>chat_inFileBackgroundSelected</item>
         <item>chat_inLoader</item>
         <item>chat_inLoaderSelected</item>
+        <item>graySection</item>
     </string-array>
     <string-array name="legacyDarkSecondaryText">
         <item>profile_status</item>
@@ -49,6 +50,7 @@
         <item>chats_sentClock</item>
         <item>chat_inTimeText</item>
         <item>chat_inTimeSelectedText</item>
+        <item>key_graySectionText</item>
     </string-array>
     <string-array name="legacyDarkPrimaryText">
         <item>chat_inReplyMediaMessageText</item>
