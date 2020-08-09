@@ -1,4 +1,5 @@
 Release 13.9
 
 • Framework: Add support for Outline/Ethereal 35.13
+• Framework: Add 'Outline Network Icons' Tweak
 • WhatsApp: Update 'Home Nav' for 2.20.196
