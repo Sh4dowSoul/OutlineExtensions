@@ -2,5 +2,5 @@
 <resources>
     <!-- Backgrounds -->
     <color name="background_material_dark">#202028</color>                                          <!-- Main -->
-    <color name="background_floating_material_dark">#2A2A32</color>                                 <!-- Surface -->
+    <color name="background_dark">#2A2A32</color>                                 <!-- Surface -->
 </resources>
