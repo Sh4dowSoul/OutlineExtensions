@@ -1,4 +1,4 @@
-Release 13.8
+Release 13.9
 
-Update
-• WhatsApp Tweaks for 2.20.64
+• Framework: Add support for Outline/Ethereal 35.13
+• WhatsApp: Update 'Home Nav' for 2.20.196
